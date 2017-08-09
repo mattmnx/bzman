@@ -846,7 +846,6 @@ def replicareport(htmlformat=False):
 def mailreport(mailto):
     '''send html report to the user'''
     tbody = replicareport(htmlformat=True)[1] 
-    print tbody
     total = len(tbody)
     successes = sum([row.count('success') for row in tbody if 'success' in row])
     failures = total - successes
