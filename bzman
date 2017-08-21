@@ -58,7 +58,7 @@ class Options():
         self.snapprefix = 'incremental'
         self.usembuffer = False
         self.mbufferram = '500M'
-        self.snapkeep = 80
+        self.snapkeep = 3
         self.capacitythreshold = 75
         self.sshport = 22
         self.smtpserver = 'localhost'
